@@ -28,10 +28,10 @@ onUnmounted(() => document.removeEventListener('click', onDocClick))
       <a href="#" class="logo" @click="mobileOpen = false">
         <img
           class="logo-img"
-          src="/agile-asia-logo.png"
-          alt="Agile ASIA"
-          width="220"
-          height="56"
+          src="/ci-cd-logo.png"
+          alt="CI/CD"
+          width="160"
+          height="44"
           loading="eager"
           decoding="async"
         />
