@@ -12,6 +12,19 @@ dist
 dist-ssr
 *.local
 
+# Environment
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+backend/*.db
+backend/test_lms_users.db
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

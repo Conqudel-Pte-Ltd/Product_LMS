@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { RouterLink } from 'vue-router'
 
 const mobileOpen = ref(false)
 const openDropdown = ref(null)
@@ -25,7 +26,7 @@ onUnmounted(() => document.removeEventListener('click', onDocClick))
 <template>
   <header class="header">
     <div class="container header-inner">
-      <a href="#" class="logo" @click="mobileOpen = false">
+      <RouterLink to="/" class="logo" @click="mobileOpen = false">
         <img
           class="logo-img"
           src="/ci-cd-logo.png"
@@ -35,7 +36,7 @@ onUnmounted(() => document.removeEventListener('click', onDocClick))
           loading="eager"
           decoding="async"
         />
-      </a>
+      </RouterLink>
 
       <button
         type="button"
@@ -95,8 +96,8 @@ onUnmounted(() => document.removeEventListener('click', onDocClick))
         <a href="#about" @click="mobileOpen = false">About Us</a>
 
         <div class="nav-actions">
-          <a href="#" class="link-login" @click="closeDropdowns">Log in</a>
-          <a href="#cta" class="btn btn-primary btn-sm" @click="mobileOpen = false">Start Free Trial</a>
+          <RouterLink to="/login" class="link-login" @click="closeDropdowns">Log in</RouterLink>
+          <RouterLink to="/free-trial" class="btn btn-primary btn-sm" @click="mobileOpen = false">Start Free Trial</RouterLink>
         </div>
       </nav>
     </div>

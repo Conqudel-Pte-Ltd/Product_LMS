@@ -6,7 +6,7 @@ const plans = [
     period: '/month',
     desc: 'Basic features, up to 100 students.',
     cta: 'Start Free Trial',
-    href: '#cta',
+    href: '/free-trial',
     featured: false,
   },
   {
@@ -16,7 +16,7 @@ const plans = [
     badge: 'Most Popular',
     desc: 'Up to 1,000 students, advanced features, and priority support.',
     cta: 'Start Free Trial',
-    href: '#cta',
+    href: '/free-trial',
     featured: true,
   },
   {

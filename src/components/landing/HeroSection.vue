@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from 'vue-router'
 import DashboardPreview from './DashboardPreview.vue'
 </script>
 
@@ -13,7 +14,7 @@ import DashboardPreview from './DashboardPreview.vue'
           Create, manage, and scale your own branded learning platform—no coding, no setup hassle.
         </p>
         <div class="hero-ctas">
-          <a href="#cta" class="btn btn-primary btn-lg">Start Free Trial</a>
+          <RouterLink to="/free-trial" class="btn btn-primary btn-lg">Start Free Trial</RouterLink>
           <a href="#demo" class="btn btn-outline btn-lg">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M8 5v14l11-7z" />

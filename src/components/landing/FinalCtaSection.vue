@@ -1,3 +1,7 @@
+<script setup>
+import { RouterLink } from 'vue-router'
+</script>
+
 <template>
   <section class="cta" id="cta">
     <div class="decor left" aria-hidden="true">
@@ -14,7 +18,7 @@
       <h2>Ready to Launch Your Own LMS?</h2>
       <p>Start building your learning platform today.</p>
       <div class="actions">
-        <a href="#" class="btn btn-primary btn-lg">Start Free Trial</a>
+        <RouterLink to="/free-trial" class="btn btn-primary btn-lg">Start Free Trial</RouterLink>
         <a href="#demo" class="btn btn-outline btn-lg">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M8 5v14l11-7z" />
